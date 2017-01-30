@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+.container1 {
+  margin-top: 5%;
+  background-color: #fff;
+}
+
 .card {
   width: 100%;
   margin-top: 10px;
@@ -14,20 +19,16 @@ body {
   padding: 5px;
 }
 
-#card-11, #card-12, #card-13, #card-14 {
-  margin-top: 30%;
-}
-
 .board-game {
-  background-color: rgb(232, 232, 232);
+  background-color: #fff;
   height: 100vh;
   padding: 0;
 }
 
 .card-wrapper {
   position: fixed;
-   right: 0;
-   top: 50%;
+  right: 0;
+  top: 50%;
 }
 
 .col-md-4 {
@@ -37,5 +38,4 @@ body {
 
 .col-md-2 {
   background-color: #fff;
-  height: 100vh;
 }
