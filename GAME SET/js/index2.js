@@ -116,30 +116,32 @@ secondPick = ""; // second selection
 thirdPick = ""; // third selection
 set = 0;
 
-// function checkIfSet (firstPick, secondPick thirdPick){
-//   if ()
-// }
-
-function checkCard(){
-  var src = this.querySelector('img').getAttribute('src');
-  var myCard = deck.filter(function(card){
-  	return card.img === src ;
-  });
-}
-
-var buttons = Array.from(document.getElementsByClassName('card'));
-buttons.forEach(function(button){
-  button.addEventListener('click',checkCard);
-});
-
-
 //******************************************************************
 // HTML/CSS Interactions
 //******************************************************************
-
-// Paint random circles in document
 
 for (var i=0; i < 16; i++) {
 var images = shuffledCards[i].img;
 document.getElementById(""+i).innerHTML = "<img src=\"" + images + "\">";
 }
+
+$(document).ready(function(){
+ for (var i=0; i<shuffleCards.length;i++){
+    $("#memory_board div:nth-child("+(i+1)+")").attr("name", shuffleCards[i].name);
+    }
+    var clickCounter = 0;
+    var lastSuperHero = "";
+
+    $('.pic').on('click', function(){
+      clickCounter++;
+      console.log($('#click').text("Clicks: "+clickCounter));
+      var superHero = $(this).attr('name');
+      $(this).addClass("clicked");
+      $(this).css("background-image", "url('img/"+superHero+".jpg')");
+
+      if (clickCounter % 2 === 0) {
+            checkIfPair(lastSuperHero, superHero);
+     } else {
+       lastSuperHero = superHero;
+     }
+   });
