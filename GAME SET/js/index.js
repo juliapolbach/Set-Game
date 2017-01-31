@@ -1,7 +1,7 @@
   // Deck
   //******************************************************************
 
-var deck = [
+var Deck = [
     {name: 'pic-01', img: 'img/pic-01.png', color: 'blue', size: 'big', fill: 'full', border: 'solid'},
     {name: 'pic-02', img: 'img/pic-02.png', color: 'blue', size: 'big', fill: 'full', border: 'dashed'},
     {name: 'pic-03', img: 'img/pic-03.png', color: 'blue', size: 'big', fill: 'full', border: 'dotted'},
@@ -89,6 +89,21 @@ var deck = [
 // Game Logic
 //******************************************************************
 
+var clickCounter = 0;
+var selectedCards = [];
+
+var selectedColors = [];
+var selectedSizes = [];
+var selectedFills = [];
+var selectedBorders = [];
+
+var setResult = [];
+var winCase1 = "false,false,false,true";
+var winCase2 = "false,false,true,true";
+var winCase3 = "false,true,true,true";
+
+
+
 // Fisher-Yates Shuffle
 function shuffle(array) {
   var m = array.length, t, i;
@@ -104,42 +119,103 @@ function shuffle(array) {
   return array;
 }
 
-// shuffled array, random and only pairs
-var shuffledCards = shuffle(deck);
-
-//******************************************************************
-// Game Logic
-//******************************************************************
-
-firstPick = ""; // first selection
-secondPick = ""; // second selection
-thirdPick = ""; // third selection
-set = 0;
-
-// function checkIfSet (firstPick, secondPick thirdPick){
-//   if ()
-// }
-
+// recoge la info de cada click y lo sube a una array
 function checkCard(){
+  clickCounter++;
   var src = this.querySelector('img').getAttribute('src');
-  var myCard = deck.filter(function(card){
-  	return card.img === src ;
+  var myCard = Deck.filter(function(card){
+  	if(card.img === src && clickCounter < 4) {
+      selectedCards.push(src);
+      selectedColors.push(card.color);
+      selectedSizes.push(card.size);
+      selectedFills.push(card.fill);
+      selectedBorders.push(card.border);
+    }
   });
 }
 
-var buttons = Array.from(document.getElementsByClassName('card'));
-buttons.forEach(function(button){
-  button.addEventListener('click',checkCard);
-});
+// check if all the values are the same or not
+function checkMatches(array) {
+    for(var i = 0; i < array.length; i++)
+  {
+      if(array[0] !== array[i]) {
+          setResult.push(false);
+          return false;
+        }
+  }
+  setResult.push(true);
+  return true;
+}
 
+function sortSetResult (array) {
+  sortedArray = array.sort().toString();
+  return sortedArray;
+}
+
+function checkIfSet (string) {
+  console.log(string);
+  if (string === winCase1) {
+    console.log("win!");
+  } else if (string === winCase2) {
+    console.log("win!");
+  } else if (string === winCase3) {
+    console.log("win!");
+  } else {
+    console.log ("epic fail");
+  }
+}
 
 //******************************************************************
 // HTML/CSS Interactions
 //******************************************************************
 
 // Paint random circles in document
+function startGame() {
+  // shuffled array
+  var shuffledCards = shuffle(Deck);
+  var selectCardsCount = 0;
+  // convierte los div en buttons
+  var buttons = Array.from(document.getElementsByClassName('card'));
+  buttons.forEach(function(button){
+    button.addEventListener('click', function(event) {
+      checkCard.apply(this, [event]);
+      selectCardsCount += 1;
 
-for (var i=0; i < 16; i++) {
-var images = shuffledCards[i].img;
-document.getElementById(""+i).innerHTML = "<img src=\"" + images + "\">";
+      if (selectCardsCount === 3) {
+        console.log("has seleccionado 3!");
+        console.log(selectedColors);
+        console.log(selectedFills);
+        console.log(selectedSizes);
+        console.log(selectedBorders);
+
+        var lookAtColors = checkMatches(selectedColors);
+        var lookAtFills = checkMatches(selectedFills);
+        var lookAtSizes = checkMatches(selectedSizes);
+        var lookAtBorders = checkMatches(selectedBorders);
+        console.log(lookAtColors);
+        console.log(lookAtFills);
+        console.log(lookAtSizes);
+        console.log(lookAtBorders);
+        console.log(setResult);
+        var readyToCheckResult = sortSetResult (setResult);
+        console.log(readyToCheckResult);
+        var set = checkIfSet (readyToCheckResult);
+      }
+    });
+  });
+  paintGame(shuffledCards);
 }
+
+function paintGame(cards) {
+  for (var i=0; i < 16; i++) {
+    var images = cards[i].img;
+    document.getElementById(""+i).innerHTML = "<img src=\"" + images + "\">";
+  }
+}
+
+function play(){
+      var audio = document.getElementById("audio");
+      audio.play();
+                }
+
+startGame();
