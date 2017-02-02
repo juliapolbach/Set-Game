@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>SET! Game</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sx-12 col-sm-12 col-md-8 board-game">
+          <div class="container-fluid container1">
+            <div class="row">
+              <div class="hidden-xs hidden-sm col-md-2"></div>
+              <div class="col-xs-3 col-sm-3 col-md-2" id="hand">
+                <div class="card" id="0"></div>
+                <div class="card" id="1"></div>
+                <div class="card" id="2"></div>
+                <div class="card" id="3"></div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-2">
+                <div class="card" id="4"></div>
+                <div class="card" id="5"></div>
+                <div class="card" id="6"></div>
+                <div class="card" id="7"></div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-2">
+                <div class="card" id="8"></div>
+                <div class="card" id="9"></div>
+                <div class="card" id="10"></div>
+                <div class="card" id="11"></div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-2">
+                <div class="card" id="12"></div>
+                <div class="card" id="13"></div>
+                <div class="card" id="14"></div>
+                <div class="card" id="15"></div>
+              </div>
+              <div class="hidden-xs hidden-sm col-md-2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <h1>Set Game!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris diam ex, congue sit amet nunc ut, sodales finibus
+            tellus. Donec efficitur posuere rutrum. Duis rhoncus enim
+            quis mi placerat lacinia. Aenean cursus, neque vitae mattis
+            luctus, eros tortor viverra libero, a eleifend lorem felis
+            sit amet sem. Sed et viverra nulla, finibus pulvinar nunc.</p>
+
+            <h3>Result : </h3><h3 id="win-loose" class="result"><span></span></h3>
+        </div>
+      </div>
+    </div>
+
+    <audio id="audio" src"sounds/sms-alert-1-daniel_simon.mp3" preload="auto"></audio>
+
+    <!-- <input type="button" value="PLAY"  onclick="play()">
+    <audio id="audio" src="http://dev.interactive-creation-works.net/1/1.ogg" ></audio> -->
+
+
+
+  <script src="js/app.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/deck.js"></script>
+</body>
+</html>
