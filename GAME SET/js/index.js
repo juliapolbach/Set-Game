@@ -221,10 +221,11 @@ function resetDiv (array) {
 
 // Paint random circles in document
 
+var score = 0;
+
 function firstIterate(remainingDeck) {
   var cards;
   var selectCardsCount = 0;
-
         checkMatches(selectedColors);
         checkMatches(selectedFills);
         checkMatches(selectedSizes);
@@ -236,13 +237,19 @@ function firstIterate(remainingDeck) {
         [newCards, remainingDeck] = pickNCards(3, remainingDeck);
         replaceWinCards(newCards);
         setAudio.play();
+        score +=100;
+        showScore();
       } else {
         console.log("fooooo");
         console.log(selectedCards);
         selectedCards = [];
+        score-=5;
+        showScore();
       }
       clearSelected();
+      console.log(score);
       return remainingDeck;
+
 }
 
 function pickNCards(n, deck) {
@@ -287,10 +294,14 @@ function loose  () {
   document.getElementById("win-loose").innerHTML = randomFailText();
 }
 
+function showScore () {
+  document.getElementById("score").innerHTML = score;
+}
+
 function initGame (){
   var cards;
   remainingDeck = shuffle(Deck);
-  [cards, remainingDeck] = pickNCards(16, remainingDeck);
+  [cards, remainingDeck] = pickNCards(30, remainingDeck);
   var selectCardsCount = 0;
 
   paintGame(cards);
