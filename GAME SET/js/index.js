@@ -29,33 +29,33 @@ var Deck = [
     {name: 'pic-25', img: 'img/pic-25.png', color: 'blue', size: 'small', fill: 'empty', border: 'solid'},
     {name: 'pic-26', img: 'img/pic-26.png', color: 'blue', size: 'small', fill: 'empty', border: 'dashed'},
     {name: 'pic-27', img: 'img/pic-27.png', color: 'blue', size: 'small', fill: 'empty', border: 'dotted'},
-    {name: 'pic-28', img: 'img/pic-28.png', color: 'red', size: 'big', fill: 'full', border: 'solid'},
-    {name: 'pic-29', img: 'img/pic-29.png', color: 'red', size: 'big', fill: 'full', border: 'dashed'},
-    {name: 'pic-30', img: 'img/pic-30.png', color: 'red', size: 'big', fill: 'full', border: 'dotted'},
-    {name: 'pic-31', img: 'img/pic-31.png', color: 'red', size: 'medium', fill: 'full', border: 'solid'},
-    {name: 'pic-32', img: 'img/pic-32.png', color: 'red', size: 'medium', fill: 'full', border: 'dashed'},
-    {name: 'pic-33', img: 'img/pic-33.png', color: 'red', size: 'medium', fill: 'full', border: 'dotted'},
-    {name: 'pic-34', img: 'img/pic-34.png', color: 'red', size: 'small', fill: 'full', border: 'solid'},
-    {name: 'pic-35', img: 'img/pic-35.png', color: 'red', size: 'small', fill: 'full', border: 'dashed'},
-    {name: 'pic-36', img: 'img/pic-36.png', color: 'red', size: 'small', fill: 'full', border: 'dotted'},
-    {name: 'pic-37', img: 'img/pic-37.png', color: 'red', size: 'big', fill: 'lined', border: 'solid'},
-    {name: 'pic-38', img: 'img/pic-38.png', color: 'red', size: 'big', fill: 'lined', border: 'dashed'},
-    {name: 'pic-39', img: 'img/pic-39.png', color: 'red', size: 'big', fill: 'lined', border: 'dotted'},
-    {name: 'pic-40', img: 'img/pic-40.png', color: 'red', size: 'medium', fill: 'lined', border: 'solid'},
+    {name: 'pic-28', img: 'img/pic-54.png', color: 'red', size: 'big', fill: 'full', border: 'solid'},
+    {name: 'pic-29', img: 'img/pic-53.png', color: 'red', size: 'big', fill: 'full', border: 'dashed'},
+    {name: 'pic-30', img: 'img/pic-52.png', color: 'red', size: 'big', fill: 'full', border: 'dotted'},
+    {name: 'pic-31', img: 'img/pic-51.png', color: 'red', size: 'medium', fill: 'full', border: 'solid'},
+    {name: 'pic-32', img: 'img/pic-50.png', color: 'red', size: 'medium', fill: 'full', border: 'dashed'},
+    {name: 'pic-33', img: 'img/pic-49.png', color: 'red', size: 'medium', fill: 'full', border: 'dotted'},
+    {name: 'pic-34', img: 'img/pic-48.png', color: 'red', size: 'small', fill: 'full', border: 'solid'},
+    {name: 'pic-35', img: 'img/pic-47.png', color: 'red', size: 'small', fill: 'full', border: 'dashed'},
+    {name: 'pic-36', img: 'img/pic-46.png', color: 'red', size: 'small', fill: 'full', border: 'dotted'},
+    {name: 'pic-37', img: 'img/pic-45.png', color: 'red', size: 'big', fill: 'lined', border: 'solid'},
+    {name: 'pic-38', img: 'img/pic-44.png', color: 'red', size: 'big', fill: 'lined', border: 'dashed'},
+    {name: 'pic-39', img: 'img/pic-43.png', color: 'red', size: 'big', fill: 'lined', border: 'dotted'},
+    {name: 'pic-40', img: 'img/pic-42.png', color: 'red', size: 'medium', fill: 'lined', border: 'solid'},
     {name: 'pic-41', img: 'img/pic-41.png', color: 'red', size: 'medium', fill: 'lined', border: 'dashed'},
-    {name: 'pic-42', img: 'img/pic-42.png', color: 'red', size: 'medium', fill: 'lined', border: 'dotted'},
-    {name: 'pic-43', img: 'img/pic-43.png', color: 'red', size: 'small', fill: 'lined', border: 'solid'},
-    {name: 'pic-44', img: 'img/pic-44.png', color: 'red', size: 'small', fill: 'lined', border: 'dashed'},
-    {name: 'pic-45', img: 'img/pic-45.png', color: 'red', size: 'small', fill: 'lined', border: 'dotted'},
-    {name: 'pic-46', img: 'img/pic-46.png', color: 'red', size: 'big', fill: 'empty', border: 'solid'},
-    {name: 'pic-47', img: 'img/pic-47.png', color: 'red', size: 'big', fill: 'empty', border: 'dashed'},
-    {name: 'pic-48', img: 'img/pic-48.png', color: 'red', size: 'big', fill: 'empty', border: 'dotted'},
-    {name: 'pic-49', img: 'img/pic-49.png', color: 'red', size: 'medium', fill: 'empty', border: 'solid'},
-    {name: 'pic-50', img: 'img/pic-50.png', color: 'red', size: 'medium', fill: 'empty', border: 'dashed'},
-    {name: 'pic-51', img: 'img/pic-51.png', color: 'red', size: 'medium', fill: 'empty', border: 'dotted'},
-    {name: 'pic-52', img: 'img/pic-52.png', color: 'red', size: 'small', fill: 'empty', border: 'solid'},
-    {name: 'pic-53', img: 'img/pic-53.png', color: 'red', size: 'small', fill: 'empty', border: 'dashed'},
-    {name: 'pic-54', img: 'img/pic-54.png', color: 'red', size: 'small', fill: 'empty', border: 'dotted'},
+    {name: 'pic-42', img: 'img/pic-40.png', color: 'red', size: 'medium', fill: 'lined', border: 'dotted'},
+    {name: 'pic-43', img: 'img/pic-39.png', color: 'red', size: 'small', fill: 'lined', border: 'solid'},
+    {name: 'pic-44', img: 'img/pic-38.png', color: 'red', size: 'small', fill: 'lined', border: 'dashed'},
+    {name: 'pic-45', img: 'img/pic-37.png', color: 'red', size: 'small', fill: 'lined', border: 'dotted'},
+    {name: 'pic-46', img: 'img/pic-36.png', color: 'red', size: 'big', fill: 'empty', border: 'solid'},
+    {name: 'pic-47', img: 'img/pic-35.png', color: 'red', size: 'big', fill: 'empty', border: 'dashed'},
+    {name: 'pic-48', img: 'img/pic-34.png', color: 'red', size: 'big', fill: 'empty', border: 'dotted'},
+    {name: 'pic-33', img: 'img/pic-33.png', color: 'red', size: 'medium', fill: 'empty', border: 'solid'},
+    {name: 'pic-50', img: 'img/pic-32.png', color: 'red', size: 'medium', fill: 'empty', border: 'dashed'},
+    {name: 'pic-51', img: 'img/pic-31.png', color: 'red', size: 'medium', fill: 'empty', border: 'dotted'},
+    {name: 'pic-52', img: 'img/pic-30.png', color: 'red', size: 'small', fill: 'empty', border: 'solid'},
+    {name: 'pic-53', img: 'img/pic-29.png', color: 'red', size: 'small', fill: 'empty', border: 'dashed'},
+    {name: 'pic-54', img: 'img/pic-28.png', color: 'red', size: 'small', fill: 'empty', border: 'dotted'},
     {name: 'pic-55', img: 'img/pic-55.png', color: 'grey', size: 'big', fill: 'full', border: 'solid'},
     {name: 'pic-56', img: 'img/pic-56.png', color: 'grey', size: 'big', fill: 'full', border: 'dashed'},
     {name: 'pic-57', img: 'img/pic-57.png', color: 'grey', size: 'big', fill: 'full', border: 'dotted'},
@@ -89,7 +89,7 @@ var Deck = [
 // Game Logic
 //******************************************************************
 
-var clickCounter = 0;
+
 var selectedCards = [];
 
 var selectedColors = [];
@@ -102,7 +102,14 @@ var winCase1 = "false,false,false,true";
 var winCase2 = "false,false,true,true";
 var winCase3 = "false,true,true,true";
 
-
+function clearSelected() {
+  selectedCards = [];
+  selectedColors = [];
+  selectedFills = [];
+  selectedSizes = [];
+  selectedBorders = [];
+  setResult = [];
+}
 
 // Fisher-Yates Shuffle
 function shuffle(array) {
@@ -121,30 +128,37 @@ function shuffle(array) {
 
 // recoge la info de cada click y lo sube a una array
 function checkCard(){
-  clickCounter++;
+  var counter = 0;
+  this.className += " selected";
   var src = this.querySelector('img').getAttribute('src');
   var myCard = Deck.filter(function(card){
-  	if(card.img === src && clickCounter < 4) {
+  	if(card.img === src && counter < 4) {
       selectedCards.push(src);
       selectedColors.push(card.color);
       selectedSizes.push(card.size);
       selectedFills.push(card.fill);
       selectedBorders.push(card.border);
+      counter++;
     }
+
   });
 }
 
-// check if all the values are the same or not
+//check if all the values are the same or not
 function checkMatches(array) {
+  console.log(">>>>>>>>", array);
     for(var i = 0; i < array.length; i++)
   {
-      if(array[0] !== array[i]) {
-          setResult.push(false);
-          return false;
-        }
-  }
-  setResult.push(true);
-  return true;
+      if((array[0] !== array[1]) && (array[0]!==array[2]) && (array[1]!==array[2])) {
+                setResult.push(false);
+                return false;}
+
+      else if (array[0] === array[1] && array[2]) {
+                setResult.push(true);
+                return true;}
+
+      else {}
+    }
 }
 
 function sortSetResult (array) {
@@ -152,70 +166,138 @@ function sortSetResult (array) {
   return sortedArray;
 }
 
-function checkIfSet (string) {
+function checkIfWin(string) {
+  // return true;
   console.log(string);
-  if (string === winCase1) {
-    console.log("win!");
-  } else if (string === winCase2) {
-    console.log("win!");
-  } else if (string === winCase3) {
-    console.log("win!");
-  } else {
-    console.log ("epic fail");
-  }
+  return string === winCase1 || string === winCase2 || string === winCase3;
 }
 
-//******************************************************************
-// HTML/CSS Interactions
-//******************************************************************
+function checkIfSet (won) {
+  if (won) win(); else loose();
+}
+function removeSelectedClass(cardsArray){
+  cardsArray.forEach(function(card){
+    card.classList.remove('selected');
+  });
+}
 
-// Paint random circles in document
-function startGame() {
-  // shuffled array
-  var shuffledCards = shuffle(Deck);
-  var selectCardsCount = 0;
-  // convierte los div en buttons
+function replaceWinCards (newCards) {
+  var selectedCards = document.querySelectorAll(".card.selected");
+  removeSelectedClass(selectedCards);
+  var newPic01 = newCards[0].img;
+  var newPic02 = newCards[1].img;
+  var newPic03 = newCards[2].img;
+  selectedCards[0].innerHTML= "<img src=\"" + newPic01 + "\">";
+  selectedCards[1].innerHTML="<img src=\"" + newPic02 + "\">";
+  selectedCards[2].innerHTML="<img src=\"" + newPic03 + "\">";
+}
+
+// function youLoose () {
+//   removeSelectedClass(selectedCards);
+// }
+
+var remainingDeck = Deck;
+
+function picInfoSelectedItems () {
   var buttons = Array.from(document.getElementsByClassName('card'));
-  buttons.forEach(function(button){
+  buttons.forEach(function (button){
     button.addEventListener('click', function(event) {
+      audio.play();
       checkCard.apply(this, [event]);
-      selectCardsCount += 1;
-
-      if (selectCardsCount === 3) {
-        console.log("has seleccionado 3!");
-        console.log(selectedColors);
-        console.log(selectedFills);
-        console.log(selectedSizes);
-        console.log(selectedBorders);
-
-        var lookAtColors = checkMatches(selectedColors);
-        var lookAtFills = checkMatches(selectedFills);
-        var lookAtSizes = checkMatches(selectedSizes);
-        var lookAtBorders = checkMatches(selectedBorders);
-        console.log(lookAtColors);
-        console.log(lookAtFills);
-        console.log(lookAtSizes);
-        console.log(lookAtBorders);
-        console.log(setResult);
-        var readyToCheckResult = sortSetResult (setResult);
-        console.log(readyToCheckResult);
-        var set = checkIfSet (readyToCheckResult);
+      if (selectedCards.length === 3) {
+        remainingDeck = firstIterate(remainingDeck);
       }
     });
   });
-  paintGame(shuffledCards);
 }
 
+function resetDiv (array) {
+  array.splice(0,3);
+}
+
+//******************************************************************
+// Game
+//******************************************************************
+
+// Paint random circles in document
+
+function firstIterate(remainingDeck) {
+  var cards;
+  var selectCardsCount = 0;
+
+        checkMatches(selectedColors);
+        checkMatches(selectedFills);
+        checkMatches(selectedSizes);
+        checkMatches(selectedBorders);
+        var readyToCheckResult = sortSetResult(setResult);
+        var won = checkIfWin(readyToCheckResult);
+        checkIfSet(won);
+        if (won) {
+        [newCards, remainingDeck] = pickNCards(3, remainingDeck);
+        replaceWinCards(newCards);
+        setAudio.play();
+      } else {
+        console.log("fooooo");
+        console.log(selectedCards);
+        selectedCards = [];
+      }
+      clearSelected();
+      return remainingDeck;
+}
+
+function pickNCards(n, deck) {
+  var cards = [];
+  for (var i = 0, j = 0; i < deck.length && j < n; i++, j++) {
+    cards.push(deck[i]);
+  }
+  return [cards, deck.slice(i)];
+}
+
+function deleteByValue(val, array) {
+    for(var f in array) {
+        if(array[f] == val) {
+            delete array[f];
+        }
+    }
+}
+
+
+//******************************************************************
+// DOM Interactions
+//******************************************************************
+
 function paintGame(cards) {
-  for (var i=0; i < 16; i++) {
+  for (var i=0; i < cards.length; i++) {
     var images = cards[i].img;
     document.getElementById(""+i).innerHTML = "<img src=\"" + images + "\">";
   }
 }
 
-function play(){
-      var audio = document.getElementById("audio");
-      audio.play();
-                }
+function randomFailText() {
+    var worlds = ["Uh, that was close, <br> don't give up!", "That wasn't smart enough. <br> Try again!", "What da hell? Really?", "I know you, <br> and you can do it <br> better than that."];
+    var whichWorld = Math.floor(Math.random() * worlds.length);
+    return worlds[whichWorld];
+}
 
-startGame();
+function win  () {
+  document.getElementById("win-loose").innerHTML = "Nice SET!";
+}
+
+function loose  () {
+  document.getElementById("win-loose").innerHTML = randomFailText();
+}
+
+function initGame (){
+  var cards;
+  remainingDeck = shuffle(Deck);
+  [cards, remainingDeck] = pickNCards(16, remainingDeck);
+  var selectCardsCount = 0;
+
+  paintGame(cards);
+  picInfoSelectedItems ();
+}
+
+initGame();
+
+var audio = new Audio('sounds/click.mp3');
+var setAudio = new Audio('sounds/win.mp3');
