@@ -1,6 +1,8 @@
 # Set-Game
 A taste of SET logic game
 
+Tecnologies // JS / HTML / CSS / BOOTSTRAP
+
 Inspired in the 70's Set card game, this renewed version of SET GAME challenge your visual acuity and tone up your pattern recognition.
 
 To claim SET you must find three cards that satisfy ALL of these conditions:
@@ -20,3 +22,5 @@ or they have three different borders.</li>
 </ul>
 
 <img src="https://juliapolbach.github.io/Set-Game/GAME%20SET/img/setgame.jpg"></img>
+
+<a href src="https://juliapolbach.github.io/Set-Game/GAME%20SET/index.html">Let's Play!</a>
