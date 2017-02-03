@@ -19,4 +19,4 @@ or they have three different fillings.</li>
 or they have three different borders.</li>
 </ul>
 
-<img>https://juliapolbach.github.io/Set-Game/GAME%20SET/img/setgame.jpg</img>
+<img src="https://juliapolbach.github.io/Set-Game/GAME%20SET/img/setgame.jpg"></img>
