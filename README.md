@@ -21,6 +21,7 @@ or they have three different fillings.</li>
 or they have three different borders.</li>
 </ul>
 <a href src="https://juliapolbach.github.io/Set-Game/GAME%20SET/index.html">Let's Play!</a>
+
 <img src="https://juliapolbach.github.io/Set-Game/GAME%20SET/img/setgame.jpg"></img>
 
 
