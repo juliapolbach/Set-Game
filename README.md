@@ -18,3 +18,5 @@ or they have three different fillings.</li>
 <li>They all have the same border,
 or they have three different borders.</li>
 </ul>
+
+<img>https://juliapolbach.github.io/Set-Game/GAME%20SET/img/setgame.jpg</img>
