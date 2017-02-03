@@ -66,3 +66,21 @@ ol, ul {
   padding-left: 0;
   list-style-type: none;
 }
+
+.card.selected:hover {
+  background-color: rgba(195, 224, 230, 0.56);
+  border-radius: 10px;
+}
+
+#final {
+  visibility: hidden;
+  position : fixed;
+  z-index: 12;
+  background-color: rgba(255, 242, 242, 0.84);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-size: 50px;
+  padding-left: 100px;
+  padding-top: 100px;
+}
